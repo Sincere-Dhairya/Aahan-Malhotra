@@ -1,0 +1,44 @@
+.navbg{
+    box-shadow:5px !important;
+    background-color: transparent;
+}
+
+.shadowing{
+    box-shadow: 0rem 0.2rem 0.1rem rgb(209, 209, 209);
+}
+.font-all{
+    font-family: 'poppins' !important;
+    overflow-x: hidden !important;
+}
+
+.text-for-links{
+    font-size: 15pxtorem;
+}
+
+
+.text-for-heading{
+    font-size: 35px;
+}
+
+.header-photo{
+    width: 90%;
+}
+
+.header-gradient{
+    background-image:linear-gradient(to bottom right, #E4F7FF, #ADE6FF);
+}
+
+.button-common{
+    background-color: #0074FD;
+    color: white;
+    box-shadow: 0rem 0.2rem 0.1rem rgb(209, 209, 209);
+    border: none;
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.helper-bg{
+    background-image: url("Media\Images\mask.png") !important;
+}
