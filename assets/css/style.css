@@ -1,0 +1,323 @@
+.logo-nav{
+    width: 300px;
+}
+
+.navbg{
+    box-shadow:5px !important;
+    background-color: transparent;
+}
+
+.navtext{
+    font-size: 17px;
+    color: white !important;
+    font-weight: 500;
+}
+
+input.bigcheckbox{
+    width: 3vw;
+    height: 3vh; 
+    transform: translateX(-1vw);
+}
+
+.emailfieldm{
+    width: 400px;
+}
+
+.checkboxtext{
+    transform: translateX(-1.5vw) translateY(-.5vh);
+    font-weight: 500;
+}
+
+.shadowing{
+    box-shadow: 0rem 0.2rem 0.1rem rgb(209, 209, 209);
+}
+
+.font-all{
+    font-family: 'poppins' !important;
+    overflow-x: hidden !important;
+}
+
+.text-for-links{
+    font-size: 15pxtorem;
+}
+
+
+.text-for-heading{
+    font-size: 35px;
+}
+
+.header-photo{
+    background: url(../Images/header1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom center;
+}
+
+.nav-gradient{
+    background-image:linear-gradient(to bottom right, #E4F7FF, #ABE6FF);
+}
+
+.button-common{
+    background-color: #0074FD;
+    color: white;
+    box-shadow: 0rem 0.2rem 0.1rem rgb(209, 209, 209);
+    border: none;
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.helper-bg{
+    background-image: url("Media\Images\mask.png") !important;
+}
+
+.fbg{
+    background-color: #0074FD;
+}
+
+.footer-image{
+    width: 600px;
+}
+
+.ficons{
+    width: 50px;
+}
+
+.ficontext{
+    text-decoration-color: white;
+    color: white;
+    font-weight: 200;
+}
+
+.zoomicon{
+    transition: transform 1s;
+}
+
+.zoomicon:hover{
+    transform: scale(1.25);
+}
+
+.social-box{
+    background: #ADE6FF;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: 100;
+    transition: transform 1s;
+}
+
+.social-box:hover{
+    transform: scale(1.2) ;
+}
+
+span{
+    color: white;
+    font-weight: 400;
+}
+
+.social-icon-size{
+    height: 75px;
+}
+
+footer{
+    color: white ;
+}
+
+h1{
+    font-size: 60px !important;
+}
+
+h2{
+    font-size: 45px !important;
+    font-weight: 600 !important;
+}
+
+h3{
+    font-size: 30px !important;
+    font-weight: 500 !important;
+}
+
+h5{
+    font-size: 25px !important;
+    font-weight: 400 !important;
+}
+
+p{
+    font-size: 20px !important;
+    color: white !important;
+}
+
+text, label{
+    margin-top: 0.6vh;
+    font-size: 15.5px !important;
+    font-weight: 500 !important;
+    text-align: center;
+    line-height: 20px;
+}
+
+.aboutbg{
+    margin-top: -50px;
+    min-height: 800px;
+    background-image: url(../Images/MiddlePortion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+.about-text{
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.spacer{
+    margin: 100px 0px 100px;
+}
+
+.slider-class{
+    background-color: transparent;
+    padding-bottom: 100px;
+}
+
+.slider-b{
+    background-color: transparent;
+    width: 5vw;
+    height: 5vh;
+    border: none;
+    align-items: center;
+    align-content: center;
+}
+
+.prev-b{
+    position: absolute;
+    z-index: 1;
+    transform: translateY(8vh) translateX(-4.0vw);
+}
+
+.next-b{
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-16.5vh) translateX(+76vw);
+}
+.slider-b:active{
+    border: none !important;
+}
+
+.slider-b:hover{
+    border:none !important;
+}
+
+input{
+    border-radius: 5px !important;
+}
+/* for wrapping the form- placeholder inside the field.*/  
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    white-space:pre-line;  
+    position:relative;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    white-space:pre-line;  
+    position:relative;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    white-space:pre-line;  
+    position:relative;
+}
+:-moz-placeholder { /* Firefox 18- */
+    white-space:pre-line;  
+    position:relative;
+}
+
+.form-area{
+    background-image: linear-gradient(to bottom right, #ADE6FF, #CAEFFF);
+    height: 450px;
+    padding: 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px #0060D0;
+}
+
+.last-section{
+    background-image: url(../Images/lastbg.png);
+    background-position: bottom -50px right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 40px !important;
+        text-align: center;
+    }
+    
+    h2{
+        font-size: 35px !important;
+        font-weight: 600 !important;
+        text-align: center;
+    }
+    
+    h3{
+        font-size: 20px !important;
+        font-weight: 500 !important;
+        text-align: center;
+    }
+    .header-photo{
+        background: url(../Images/phone-header.png);
+        background-repeat: no-repeat;
+    }
+    .slider-class{
+        padding-bottom: 80px;
+    }
+    .slider-im{
+        height: 100px;
+    }
+    .slide-mb{
+        width: 10vw;
+    }
+    .prev-b{
+        transform: translateY(30vh);
+    }
+    .next-b{
+        transform: translateY(-3.3vh) translateX(86vw);
+    }
+    .footer-image{
+        width: 350px;
+    }
+    .emailfieldm{
+        width: 90px;
+    }
+    .aboutbg{
+        min-height: 500px;
+        background-image: url(../Images/MiddlePortion.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom right -200px;
+        padding-bottom: 20vh;
+    }
+    .mspan{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .social-icon-size{
+        width: 100px;
+        height: auto;
+    }
+    .spacer{
+        margin: 50px 0px 50px;
+    }
+    .logo-nav{
+        width: 250px;
+    }
+    .about-text{
+        color: white;
+        margin-top: 25px;
+        font-size: 25px;
+        line-height: 80px;
+        text-shadow: 1px 1px gray;
+    }
+}
+
+.nex-b{
+    width: 50px;
+}

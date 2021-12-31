@@ -7,15 +7,14 @@
     <title>Aahan Malhotra</title>
 
     <!-- CSS -->
-    <link href="style.css" rel="stylesheet">
-    <link href="infinite-slider.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-4.3.1-dist/css/bootstrap-grid.css" rel="stylesheet">
     <link href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="bootstrap-4.3.1-dist/css/bootstrap-reboot.css" rel="stylesheet">
     <link href="bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick.css"/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,114 +22,337 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body class="fontall">
-    <!-- Navbar -->
-    <div class="header-gradient">
-        <div class="shadowing">
-            <nav class="navbar navbar-custom navbar-expand-lg navbar-light navbg mx-5">
+    <!-- Navbar-->
+    <div class="">
+        <div class="bg-primary">
+            <nav class="navbar navbar-expand-md navbar-light navbg">
                 <a href="index.html" class="navbar-brand">
-                    <img src="Media\Images\logo.svg" style="width: 300px;">
+                    <img src="assets\Images\Aahanlogo.svg" class="logo-nav">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse" id="navbarNavDropdown">
-                <ul class=" navbar-nav ml-auto text-for-links">
-                    <li class=" nav-item active">
-                    <a class="nav-link" href="#">Counselling <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class=" navbar-nav ml-auto text-for-links">
+                        <li class="nav-item">
+                            <a class="nav-link navtext" href="#">Counselling <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navtext" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navtext" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navtext" href="#">Subscribe</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
-
         </div>
+
         <!-- Header Section -->
-        <section>
-            <div class="row m-5">
-                <div class="col-md-6 my-md-5">
-                    <div class="my-md-5">
-                        <h1>
-                            On a mission to turn you into an entrepreneur!
-                        </h1>
-                        <br>
-                        <button class="button-common font-all">
-                            Get Started
-                        </button>
+        <section class="header-photo">
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-md-6 my-md-5">
+                        <div class="my-md-5">
+                            <h1>
+                                On a mission of making you an entrepreneur!
+                            </h1>
+                            <br>
+                            <form>
+                                <div class="mb-3">
+                                    <label style="font-size: 18px; font-weight: 500;" for="exampleInputEmail1" class="form-label">Know my secrets now! Drop your Email address here.</label>
+                                    <input type="email" class="form-control emailfieldm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="rockstar@inc.ltd">
+                                    <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input class="bigcheckbox" type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label checkboxtext" for="exampleCheck1">Yes, I want to fly high.</label>
+                                </div>
+                                <button type="submit" class="button-common ">Submit</button>
+                            </form>
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <img class="header-photo" src="Media\Images\aa">
+                    <div class="col-md-6">
+                        <!--<img style="float: right;" class="" src="assets\Images\aahan-m.png">-->
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <!--Have Spaoken On-->
-    <section>
-        <div class="row">
-            <h2>
-                Have Spoken on
-            </h2>
+    <!-- Have Spoken on -->
+    <div class="container justify-content-center">
+        <div class="row justify-content-center">
+            <h2 class="spacer">Have Spoken on</h2>
         </div>
-        <div class="multiple-items">
-            <div>
-                <img src="Media\Images\dtu.">
-            </div>
-        </div>
-        <section>
-            <div class="row m-5">
-                <div class="col-md-6 my-md-5">
-                    <div class="my-md-5">
-                        <h1>
-                            I can help you being a ...
-                        </h1>
-                        <br>
-                        <ul class="text-for-heading">
-                            <li>An Educator</li>
-                            <li>A Counseller</li>
-                            <li>A Strategist</li>
-                        </ul>
+        <div class="row justify-content-center slider-class">
+            <div class="col-md-2">
+                <div style="align-items: center; align-content: center;" class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <img class="slider-im"  style="width: 120px;" src="assets/Images/LSE-Logo.svg" alt="" srcset="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <text>London School of Economics</text>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img class="header-photo" src="Media\Images\aahang">
+            </div>
+            <div class="col-md-2">
+                <div style="align-items: center; align-content: center;" class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <img class="slider-im"  style="width: 122px;" src="assets/Images/DU-Logo.png" alt="" srcset="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <text>Delhi University</text>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class ="helper-bg">
-            <img src="Media/Images/msk.png">
-            <div class="row m-5">
-                <h1>
-                    I can help you being a ...
-                </h1>
-                <br>
-                <ul class="text-for-heading">
-                    <li>An Educator</li>
-                    <li>A Counseller</li>
-                    <li>A Strategist</li>
-                </ul>
-                <div class="col-md-6">
-                    <!--<img class="header-photo" src="Media\Images\aahan-m.png">-->
+            <div class="col-md-2">
+                <div style="align-items: center; align-content: center;" class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <img class="slider-im"  style="width: 120px;" src="assets/Images/TimesNext-Logo.png" alt="" srcset="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <text>Times Next</text>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="col-md-2">
+                <div style="align-items: center; align-content: center;" class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <img class="slider-im" style="width: 120px;" src="assets/Images/DTU-Logo.png" alt="" srcset="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <text>Delhi Technological University</text>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div style="align-items: center; align-content: center;" class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <img class="slider-im"  style="width: 115px;" src="assets/Images/IIM-Indore-Logo.svg" alt="" srcset="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <text>IIM Indore</text>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div style="align-items: center; align-content: center;" class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <img class="slider-im"  style="width: 157px;" src="assets/Images/MAIT-Logo.svg" alt="" srcset="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <text>MAIT</text>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div style="align-items: center; align-content: center;" class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <img  class="slider-im" style="width: 120px;" src="assets/Images/TBP-Logo.png" alt="" srcset="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <text>The Business Press</text>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div style="align-items: center; align-content: center;" class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <img  class="slider-im" style="width: 100px;" src="assets/Images/Amity-logo.png" alt="" srcset="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <text>Amity University</text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- I am a.. -->
+    <section class="aboutbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container-fluid">
+                        <div class="row ">
+                            <h2 style="margin-top: 0px; margin-bottom: 0px;" class="spacer">I can help you being a...</h2>
+                        </div>
+                        <div class="row about-text">
+                            <ul>
+                                <li>An Educator</li>
+                                <li>A Counsellor</li>
+                                <li>A Strategist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <!-- Social Handles -->
+    <div class="fontall container py-5">
+        <div class="row justify-content-center">
+            <h2 class="spacer">Stay in Touch With Me</h2>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-2 mx-5">
+                <a href="https://www.instagram.com/theaahanmalhotra/" style="text-decoration: none;" target="_blank" class="">
+                    <div style="align-items: center; align-content: center;" class="container-fluid social-box py-4">
+                        <div class="row justify-content-center">
+                            <img style="height: 75px;" src="assets/Images/Instagram.svg" alt="" srcset="">
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="mx-5" style="margin-top: 10px; margin-bottom: 0px; padding-bottom: 0px;">@theaahanmalhotra</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 mx-5 mspan">
+                <a href="https://www.linkedin.com/in/aahanmalhotra/" style="text-decoration: none;" target="_blank" class="">
+                    <div style="align-items: center; align-content: center;" class="container-fluid social-box py-4">
+                        <div class="row justify-content-center">
+                            <img style="height: 75px;" src="assets/Images/Linkedin.svg" alt="" srcset="">
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="mx-5" style="margin-top: 10px; margin-bottom: 0px; padding-bottom: 0px;">in/aahanmalhotra/</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 mx-5">
+                <a href="" target="_blank" style="text-decoration: none;" class="">
+                    <div style="align-items: center; align-content: center;" class="container-fluid social-box py-4">
+                        <div class="row justify-content-center">
+                            <img style="height: 75px;" src="assets/Images/Youtube.svg" alt="" srcset="">
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="mx-5" style="margin-top: 10px; margin-bottom: 0px; padding-bottom: 0px;">/aahanmalhotra/</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <section class="last-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="spacer">Send Me Your Message</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-5 my-5 pb-5">
+                    <!-- Form -->
+                    <form class="form-area">
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small-->
+                        </div>
+                        <div class="form-group">
+                            <label for="Message">Write your message here</label>
+                            <input type="text" style="height: 80px;" class="form-control" id="Message" placeholder="Write your message briefly here. You can even mention some of your personal details.">
+                        </div>
+                        <div class="form-group">
+                            <select style="border:0px" class="form-select" aria-label="Default select example">
+                                <option selected>Select your profession</option>
+                                <option value="1">Student</option>
+                                <option value="2">Working Professional</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="button-common">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="fontall fbg">
+        <div class="container-fluid">
+            <footer class="py-3">
+                <div class="container-fluid justify-content-center">
+                    <br>
+                    <div class="row justify-content-center mt-5">
+                        <a href="index.html" class="nav-link"><img class="footer-image" src="assets/Images/logo-footer.svg"></a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2>-On a mission to make youth more aware</h2>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-md-1 mx-5 zoomicon">
+                            <a class="nav-link px-2" href="#">
+                                <div class="row justify-content-center">
+                                    <img class="ficons" src="assets/Images/counselling.svg" alt="">
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>Counselling</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-1 mx-5 zoomicon">
+                            <a class="nav-link px-2" href="http://">
+                                <div class="row justify-content-center">
+                                    <img style="width: 57px;" class="ficons" src="assets/Images/blogs.svg" alt="">
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>Blogs</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-1 mx-5 zoomicon">
+                            <a class="nav-link px-2" href="http://">
+                                <div class="row justify-content-center">
+                                    <img class="ficons" src="assets/Images/contact.svg" alt="">
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p style="margin-top: 2px;">Contact</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-1 mx-5 zoomicon">
+                            <a class="nav-link px-2" href="http://">
+                                <div class="row justify-content-center">
+                                    <img class="ficons" src="assets/Images/subscribe.svg" alt="">
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>Subscribe</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center ">&copy; Copyright 2021 Anything By Zero Private Limited | All Rights Reserved | Designed with love and devotion by Dhairya Varshney</p>
+            </footer>
+        </div>
+    </div>
+
     <!-- Scripts -->
-    <script src="script.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"> </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
