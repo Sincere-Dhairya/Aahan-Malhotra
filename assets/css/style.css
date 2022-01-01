@@ -193,13 +193,13 @@ text, label{
 .prev-b{
     position: absolute;
     z-index: 1;
-    transform: translateY(8vh) translateX(-4.0vw);
+    transform: translateY(8vh) translateX(-40.0vw);
 }
 
 .next-b{
     position: absolute;
     z-index: 1;
-    transform: translateY(-16.5vh) translateX(+76vw);
+    transform: translateY(8vh) translateX(+40vw);
 }
 .slider-b:active{
     border: none !important;
@@ -262,9 +262,11 @@ input{
         font-weight: 500 !important;
         text-align: center;
     }
+    
     .header-photo{
         background: url(../Images/phone-header.png);
         background-repeat: no-repeat;
+        min-height: 650px;
     }
     .slider-class{
         padding-bottom: 80px;
@@ -276,10 +278,10 @@ input{
         width: 10vw;
     }
     .prev-b{
-        transform: translateY(30vh);
+        transform: translateY(30vh) translateX(-40vw);
     }
     .next-b{
-        transform: translateY(-3.3vh) translateX(86vw);
+        transform: translateY(30vh) translateX(30vw);
     }
     .footer-image{
         width: 350px;
