@@ -266,6 +266,7 @@ input{
     .header-photo{
         background: url(../Images/phone-header.png);
         background-repeat: no-repeat;
+        background-size: cover;
         min-height: 650px;
     }
     .slider-class{
